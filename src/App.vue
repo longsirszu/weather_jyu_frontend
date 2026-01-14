@@ -300,12 +300,12 @@ body {
   width: 100%;
   height: 100%;
   /* 高清蓝天图 */
-  background-image: url('https://images.unsplash.com/photo-1601297183305-6df142704ea2?q=80&w=2574&auto=format&fit=crop');
+  background-image: url('@/assets/images/background.png');
   background-size: cover;
   background-position: center;
   z-index: -1;
   /* 增加亮度和饱和度，让画面更通透 */
-  filter: brightness(0.8) saturate(1.2) contrast(1.05);
+  filter: brightness(1.0) saturate(1.2) contrast(1.05);
 }
 
 .content-container {
