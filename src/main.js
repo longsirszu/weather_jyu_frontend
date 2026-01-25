@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
 
 // 1. 引入 Element Plus
 import ElementPlus from 'element-plus'
@@ -13,10 +14,13 @@ import 'qweather-icons/font/qweather-icons.css'
 
 const app = createApp(App)
 
-// 4. 注册 Element Plus
+// 4. 注册路由
+app.use(router)
+
+// 5. 注册 Element Plus
 app.use(ElementPlus)
 
-// 5. 注册所有图标 (方便在页面直接用)
+// 6. 注册所有图标 (方便在页面直接用)
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component)
 }
